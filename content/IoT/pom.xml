@@ -35,6 +35,7 @@
 
   <modules>
     <module>IoTDeveloper</module>
+    <module>magic-industrial-data-acquisition</module>
   </modules>
 
 </project>

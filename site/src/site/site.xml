@@ -136,6 +136,11 @@
         <item name="Presentation" href="presentations/training/presentation/index_en.html" target="_blank"/>
       </item>
       <item name="Apache Zookeeper" href="presentations/zookeeper/index_en.html" target="_blank"/>
+      <item name="IoT">
+        <item name="Magic Industrial Data Acquisition" href="iot/magic-industrial-data-acquisition-with-apache-plc4x-tsfile-and-iotdb/index.html" target="_blank"/>
+        <item name="Apache MyNewt" href="presentations/mynewt/index_en.html" target="_blank"/>
+        <item name="Revolutionizing IIoT with Apache PLC4X" href="presentations/plc4x/revolutionizing-iiot-with-plc4x/index.html" target="_blank"/>
+      </item>
     </menu>
 
     <!-- Users (Authors and presenters) -->
