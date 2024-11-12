@@ -17,17 +17,17 @@ And then run:
 This will give you a list of questions to answer in order to create the
 new presentation:
 
-  Define value for property 'groupID': org.apache.training.content
-  Define value for property 'artifactID': training-content-HowToDoStuff
-  Define value for property 'version' 1.0.0-SNAPSHOT: :
-  Define value for property 'package' org.apache: :
-  Confirm properties configuration:
-  apacheTrainingToolsVersion: 1.3.0
-  groupID: org.apache.training.content
-  artifactId: training-content-HowToDoStuff
-  version 1.0.0-SNAPSHOT
-  package: org.apache
-  Y: :
+-  Define value for property 'groupID': org.apache.training.content
+-  Define value for property 'artifactID': training-content-HowToDoStuff
+-  Define value for property 'version' 1.0.0-SNAPSHOT: :
+-  Define value for property 'package' org.apache: :
+-  Confirm properties configuration:
+-  apacheTrainingToolsVersion: 1.3.0
+-  groupID: org.apache.training.content
+-  artifactId: training-content-HowToDoStuff
+-  version 1.0.0-SNAPSHOT
+-  package: org.apache
+-  Y: :
 
 In practice, you'll have to answer the first two questions (`groupID` and
 `articactID`) and just hit enter for the others. Answer Y at the end to
