@@ -1,0 +1,228 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+:revnumber: {project-version}
+:example-caption: CAPTION-EX
+
+include::_settings.adoc[]
+:presenter_name: Mirko Kämpf
+:presenter_company: Apache Software Foundation - Apache Wayang Project
+
+
+== Apache Software Foundation
+
+image::./image-2024-11-12-16-37-44-198.png[]
+
+
+== What are we doing today?
+
+2 Sessions + Pizza + Tea + Beer:
+
+- Networking
+- Session 1: Konstantin
+- Session 2: Mirko
+- Networking
+
+== Apache Kafka Meetup
+
+*Many Thanks!* to our Sponsors
+
+- Coworking am Klaustor - Halle (Saale)
+
+image::kt-logo.png[scaledwidth=75%]
+
+== Apache Kafka Meetup
+
+*Many Thanks!* to our Sponsors
+
+- Confluent Inc.
+
+image::./image-2024-11-12-16-40-09-213.png[]
+
+
+
+== Kafka Meets Wayang in Halle (Saale), Germany
+
+https://www.meetup.com/de-DE/leipzig-kafka/events/303683270/
+
+image::./lets-go.png[]
+
+== What is Apache Kafka?
+[%step]
+1.	*Distributed Event Streaming Platform:* Apache Kafka enables the collection, storage, and processing of high-throughput, real-time data streams.
+2.	*Pub-Sub Messaging System:* Kafka allows producers to publish messages to topics and consumers to subscribe, ensuring reliable data delivery.
+3.	*Real-Time Data Pipelines:* Kafka supports seamless integration between diverse systems, enabling data movement and processing in real-time.
+4.	*Core for Modern Architectures:* Widely used for event-driven applications, microservices, and analytics in industries like finance, retail, and tech.
+
+== What is Apache Wayang?
+
+[%step]
+1. *Cross-Platform Data Processing:* Apache Wayang (formerly Rheem) enables unified data processing across multiple platforms like Apache Spark, Flink, and TensorFlow.
+2.	*Platform-Agnostic Abstraction:* Provides a high-level API to decouple application logic from specific execution engines, increasing flexibility.
+3.	*Cost-Optimized Workflows:* Dynamically optimizes execution plans to balance performance and resource utilization across heterogeneous environments.
+4.	*Multi-Engine Interoperability:* Seamlessly integrates diverse processing engines, leveraging their unique strengths within a single pipeline.
+
+== Integrating Kafka clients with external systems
+
+Konstantin Sillin
+
+== Wie Apache Wayang kollaborative KI ermöglicht
+
+_Die Rolle der Datenföderation für Assistenten im Unternehmen_
+
+Dr. Mirko Kämpf <kamir@apache.org>
+
+== Block 1: Das Datenlabyrinth und die Notwendigkeit der Föderation
+
+=== Data is King
+
+Data is . . . . . . .  (es gibt zu viele Marketing Sprüche!)
+
+image::./data-is-the-new-oil.png[width=45%]
+
+=== Data is in ...
+[%step]
+- Data Warehouses
+- Data Lakes
+- Data Streaming Platforms
+- and obviously spread across all of them!
+
+=== Daten sind weit vertreilt ...
+
+image::./image-2024-11-12-17-28-21-390.png[]
+
+=== Und wo sind die Daten für den Agenten?
+
+image::./image-2024-11-12-18-50-10-046.png[]
+
+=== Herausforderungen verteilter Daten
+[%step]
+- Datensilos voneinander abgeschottet
+- Fragmentierung (Ihr kennt das von der Festplatte! ;-)
+- Probleme mit Zugriffen (Regeln, Mechanismen)
+- Unklare Qualität in verteilten Umgebungen
+
+=== Datensilos: SaaS, Regionen, Abteilungen
+
+image::./image-2024-11-12-19-34-13-203.png[]
+
+=== Datenföderation
+
+image::./image-2024-11-12-19-35-26-723.png[]
+
+=== Intelligente Assistenten und Daten
+- Warum sind eigentlich Assistenten auf vielfältige Datensätze angewiesen?
+
+[%step]
+- Anpassung bei Inbetriebnahme
+- Anpassung an neue Situationen
+- Korrektur von Fehlern
+
+=== Wo lernen die Agenten?
+[%steps]
+- Variante 1: gar nicht - sie nutzen fertige Modelle
+- Variante 2: im Labor des Herstellers
+- Variante 3: im Labor des Nutzers
+- Variante 4: im Einsatz
+
+=== Einseitiges Training führt zu "Vorurteilen"
+
+image::./image-2024-11-12-18-51-59-837.png[width=45%]
+
+=== Vielfalt durch Datenföderation
+
+image::./image-2024-11-12-17-29-59-686.png[]
+
+=== Lernen im Leben oder im Labor?
+- Wie realistisch ist es, stets alle Daten, die man für wirksames Modell-Training braucht, an den Ort des Trainings zu holen?
+
+=== Lernen im Leben oder im Labor?
+- Wie realistisch ist es, stets alle Daten, die man für wirksames Modell-Training braucht, an den Ort des Trainings zu holen?
+- Kann man wirklich alle Trainingsdaten zentral zusammentragen?
+
+  Theoretisch ja, praktisch eher nicht.
+
+=== Lernen im Leben oder im Labor?
+- Wie realistisch ist es, stets alle Daten, die man für wirksames Modell-Training braucht, an den Ort des Trainings zu holen?
+- Kann man wirklich alle Trainingsdaten zentral zusammentragen?
+
+  Theoretisch ja, praktisch eher nicht.
+
+- Darf man das am Ende auch?
+
+  In den meissten Fällen nicht.
+
+=== Wie sollten Assistenten lernen?
+[%steps]
+- fortlaufend
+- auf vielseitigen relevanten Daten (für die Aufgabe des Agenten relevant)
+- inkrementell
+- collaborativ
+
+== Block 2: Apache Wayang als Lösung
+
+=== Einführung in Apache Wayang
+
+image::./pages-Seite1.png[]
+
+=== Einführung in Apache Wayang
+
+image::./pages-Seite2.png[]
+
+=== Einführung in Apache Wayang
+
+image::./pages-Seite3.png[]
+
+=== Einführung in Apache Wayang
+
+image::./pages-Seite4.png[]
+
+== Block 3: Praktische Einblicke und zukünftige Perspektiven
+
+=== Aktueller Ansatz
+
+image::./image-2024-11-12-21-35-02-288.png[]
+
+=== Aktueller Ansatz
+[%step]
+- Raw-Data flows into a Kafka cluster.
+- The cluster is now in the same security context as the raw data.
+- Multiple custom connectors are needed.
+- A Streaming-Application runs the data processing steps on top of Kafka.
+- The overall logic must be implemented using Streaming apps, using the data in our cluster.
+- Results are piped forward into a target cluster, out of the owners control.
+
+=== Kooperative Datennutzung mit Confluent Cloud
+
+image::./image-2024-11-12-19-38-59-442.png[]
+
+=== Neuer Ansatz
+[%step]
+- Wayang Multi-Context can process the data in place in multiple systems, and only brings the non-sensitive data into the cluster.
+- A Wayang Plan Executor processes the non-sensitive data and optionally also other remote data which is still sensitive in its original context.
+- The cluster never sees any sensitive data, and all logic can be expressed in the same language, as part of a Wayang-Plan.
+- Execution can be done on existing fully managed components, such as Kafka Connect and Apache Flink, both provided by Confluent cloud.
+
+=== Wayang meets Kafka
+
+image::./image-2024-11-12-20-43-47-443.png[]
+
+=== Die Apache Wayang Community
+
+image::./image-2024-11-12-20-47-26-742.png[]
+

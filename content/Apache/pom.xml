@@ -48,6 +48,7 @@
     <module>Samza</module>
     <module>Spark</module>
     <module>Training</module>
+    <module>Wayang</module>
     <module>ZooKeeper</module>
   </modules>
 
